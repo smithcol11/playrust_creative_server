@@ -47,6 +47,8 @@ This POC exists as a standalone from these for a few reasons:
 
 # Tutorial
 
+To begin, download the server.zip from the [Releases](https://github.com/smithcol11/playrust_creative_server/releases), this contains all the necessary files and configs needed.
+
 ## Running Server
 
 Getting a server started will be pretty easy, as some maps are provided and the config files are written in a way that makes sense for what we want.  
