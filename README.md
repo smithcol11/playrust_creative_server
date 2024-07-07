@@ -12,6 +12,7 @@
   - [Stopping Server](#stopping-server)
   - [Recommended Binds](#recommended-binds)
   - [Other Information](#other-information)
+    - [Godmode](#godmode)
     - [Time](#time)
     - [Building Grade](#building-grade)
     - [Spawing Anything](#spawing-anything)
@@ -19,6 +20,7 @@
 - [Tools \& Links](#tools--links)
     - [Rust Edit](#rust-edit)
     - [Commands](#commands)
+- [Updates](#updates)
 
 # About
 
@@ -72,7 +74,7 @@ Once this is done, we can connect from our Rust client.
 
 ## Connecting to Server
 
-Open Rust, and hit `F1` to open the console. Here we will type `connect localhost:28015`  
+Open Rust, and press `F1` to open the console. Here we will type `connect localhost:28015`  
 This will connect us to our locally hosted server on port 28015. `connect` should resolve to `client.connect`.  
 
 ![connect example](./screenshots/client_connect.png)
@@ -83,8 +85,8 @@ To disconnect, you can open the console again, and type `disconnect`, which maps
 
 ## Stopping Server
 
-This is pretty easy, you just have to hit `ctrl` + `c` in the console that started the server.  
-It will then prompt you to terminate the batch job, to which you type `y` and hit enter.
+This is pretty easy, you just have to press `ctrl` + `c` in the console that started the server.  
+It will then prompt you to terminate the batch job, to which you type `y` and press enter.
 
 ## Recommended Binds
 
@@ -109,10 +111,16 @@ Feel free to set these to be whatever you want.
 
 ## Other Information
 
+### Godmode
+
+There is a config value `global.god` that should be set to 'True'.  
+It will prevent you from taking damage and needing to eat/drink.  
+If it isn't working at first, press `F1` in game, and type `global.god True` in the console;
+
 ### Time
 
 There is a config value `global.admintime` that should set the time statically to noon. But this may not work, or you may want to change it.  
-Simply hit `F1` in game, and type `admintime n` in the console; `-1 <= n <= 24`
+Simply press `F1` in game, and type `admintime n` in the console; `-1 <= n <= 24`
 
 ### Building Grade
 
@@ -123,12 +131,12 @@ While using the building plan, you can set the grade of what you place by using 
 ### Spawing Anything
 
 You will likely want to spawn objects and items to place around your base or use.  
-A good flow for this is to hit `F1` then `Tab`, which will bring you to the "Items" tab. Admins can spawn anything in from here.  
+A good flow for this is to press `F1` then `Tab`, which will bring you to the "Items" tab. Admins can spawn anything in from here.  
 You will also notice that your cursor is automatically placed on the search bar, so you can begin typing what you want. In this example, a tool cupboard.  
 
 <img src="./screenshots/spawn_items.png" style="height: 400">
 
-Close this by hitting `F1` again or `Esc`.
+Close this by pressing `F1` again or `Esc`.
 
 ### Saving
 
@@ -151,3 +159,11 @@ The website is pretty bare bones, but the tool is great and pretty intuitive to 
 
 [Useful Console Commands](https://wiki.facepunch.com/rust/useful_commands) - Rust Wiki  
 [Admin Commands](https://www.corrosionhour.com/rust-admin-commands/) - Corrosion Hour
+
+# Updates
+
+I will update this if problems are found, better configs are needed, or new maps are desired, etc.
+
+I have thought about writing some plugins for [Oxide](https://umod.org/games/rust) that would provide similar tools to Builder's Sanctuary or UKN Sandbox, but that is a lot of work and I am unsure if anyone would even be interested in that. So for now I will leave it as this and if people are wanting this I can look into it!
+
+Cheers
